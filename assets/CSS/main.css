@@ -1028,7 +1028,7 @@
 }
 
 .home-product-item:hover {
-    box-shadow: #666;
+    box-shadow: 0 1px 2px #e0e0e0;
     transition: 1px 1px 1px 0.1s;
 }
 
@@ -1234,8 +1234,6 @@ i.home-product-item__like-icon-fill {
     line-height: var(--height);
 }
 
-.pagination-item-icon {}
-
 .home-product__pagination {
     margin: 48px 0 32px 0;
 }
@@ -1243,19 +1241,95 @@ i.home-product-item__like-icon-fill {
 
 /* Footer */
 
+.footer {
+    padding-top: 16px;
+    border-top: 4px solid var(--primary-color);
+}
+
 .footer__heading {
     text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--text-color);
 }
 
 .footer__list {
     list-style: none;
+    padding-left: 0;
 }
 
-.footer__list-item {}
+.footer__list-img {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item-img {
+    list-style: none;
+    margin: 0 8px 8px 0;
+    padding: 4px;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 2px #e0e0e0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 2px;
+}
 
 .footer__list-item-link {
+    display: block;
     text-decoration: none;
-    color: var(--text-color);
+    color: #737373;
+    font-size: 1.2rem;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
 }
 
-.footer__list-item-link-icon {}
+.footer__list-item-link:hover {
+    color: var(--primary-color);
+}
+
+.footer__list-item-link-icon {
+    font-size: 1.6rem;
+    margin: -1px 6px 0 0;
+}
+
+.footer__dowload {
+    display: flex;
+}
+
+.footer__dowload-qr {
+    height: 80px;
+    width: 80px;
+    border: 1px solid var(--border-color);
+}
+
+.footer__dowload-apps {
+    flex: 1;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__dowload-app-img {
+    height: 20px;
+}
+
+.footer__dowload-app-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer__bottom {
+    background-color: #F5F5F5;
+    padding: 8px 0;
+    margin-top: 36px;
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #737373;
+}
